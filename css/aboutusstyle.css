@@ -1,0 +1,384 @@
+body {
+    background-image: url('../images/blackgound_img1.jpeg');
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+  }
+
+
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 48px;
+}
+h2{
+  font-family: sans-serif;
+  text-align: center;
+}
+.para{
+  font-family: sans-serif;
+  text-align: center;
+
+
+}
+
+/*syles for image slider*/
+.slider{
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .slider_tracker-container{
+    background: #FFC300;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: inset;
+  }
+  .slider_tracker{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+  .slider_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .slider_btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  
+  }
+  .slider_btn--left{
+    left: -50px;
+  }
+  .slider_btn--right{
+    right: -50px;
+  }
+  .slider_btn img{
+    width: 20px;
+  }
+  .slider-indicators {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    
+  }
+  
+  .indicator{
+    display: inline-block;
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #00081447;
+    margin: 0 10px;
+    
+  }
+  .indicator-current{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #000814;
+    margin: 0 10px;
+  }
+  
+  
+ /* style for discripton*/ 
+  .aboutusdiscription{
+    
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 24px;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+  }
+  
+  /* styles for team members */
+  .team {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  .details{
+    
+    justify-content: space-around;
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  
+  }
+  /* syles of main page */
+  .logo{
+      display: block;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .image {
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 200px;
+    }
+  
+  .getleft{
+    float: left;
+  }
+  
+  div.container
+  {
+    font-family: sans-serif;
+    margin: 0 auto;
+      padding: 45px 16px;
+      text-align: right;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  div.container a
+  {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px sans-serif;
+    margin: 0px 10px;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  
+  div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+  {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  div.topBotomBordersIn a:before
+  {
+    top: 0px;
+    transform: translateY(-10px);
+  }
+  
+  div.topBotomBordersIn a:after
+  {
+    bottom: 0px;
+    transform: translateY(10px);
+  }
+  
+  div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .colornav
+  {
+    background: #001D3D;
+  }
+  
+  hr{
+    border-width: 2px;
+  }
+  
+  .flex-container {
+    border-radius: 0 0 0 0;
+    display: flex;
+    background-color: #000814;
+  }
+  
+  .flex-container2 {
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    background-color: #000814;
+  }
+  
+  .flex-container3 {
+    border-radius: 0 0 0 0;
+    display: flex;
+    background-color: #000814;
+   }
+  
+  .flex-container > div{
+    background-color: #FFC300;
+    margin: 25px;
+    padding: 20px;
+    flex:1;
+    border-radius: 20px;
+  }
+  
+  .flex-container2 > div{
+    background-color: #000814;
+    color:#FFC300;
+    margin: 25px;
+    padding: 20px;
+    flex:1;
+    font-family: Segoe UI;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .flex-container3 > div{
+    background-color: #000814;
+    padding: 0px;
+    flex:1;
+    margin-bottom: 2px;
+  }
+  
+  .footer-hr{
+    flex:1;
+    background-color: #FFC300;
+    margin: 0 0;
+  }
+  
+  .sm-button{
+    height: 70px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    color: #FFF;
+    border-radius: 5px;
+  }
+  
+  .fa:hover{
+    background-color: #003566;
+  }
+    
+  .fa-facebook {
+    background-color: #000814;
+    padding: 10px 13px;
+  }
+    
+  .fa-twitter {
+    background-color: #000814;
+    padding: 10px 13px;
+  }
+  
+  .fa-youtube {
+    background-color: #000814;
+    padding: 10px 13px;
+  }
+    
+  .fa-instagram {
+    background-color: #000814;
+    padding: 10px 13px;
+  }
+  
+  .fa-icon-link {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ft-1>table{
+    border-collapse: collapse;
+  }
+  
+  td{
+    padding-right: 30px;
+  }
+  
+  .onespace{
+    text-indent: 15px;
+  }
+  
+  .footerlogo{
+    /*font-family: ;*/
+    text-indent: 10px;
+  }
+  
+  .flex-container>div.ft-3{
+    flex: 1;
+  }
+  
+  .flex-container>div.ft-2{
+    flex: 2;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .flex-container>div.ft-1{
+    flex: 1;
+  }
+  
+  .linkspace{
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: #000814;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 3;
+  }
+  
+  .tablefont{
+    font-size: 15px;
+    font-family: 'roboto', Times, serif;
+    font-weight: bold;
+  }
+  
+  .linkspace:hover{
+    color: #003566;
+  }

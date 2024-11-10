@@ -1,0 +1,346 @@
+body {
+  background-image: url('../images/blackgound_img1.jpeg');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.para {
+  font-family: sans-serif;
+  text-align: center;
+
+
+}
+
+
+/* Style the Login heading */
+.login-signup{
+  
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.signup-heading {
+
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+
+}
+
+.input-box-330 {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 20 auto;
+}
+
+
+.phppot-container {
+  max-width: 500px;
+  margin: 60 auto;
+  padding: 20px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  background-color: rgba(88, 88, 88, 0.254);
+  backdrop-filter: blur(5px);
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+
+.btn {
+  background-color: #FFC300;
+  color: #000000;
+  padding: 15px 30px;
+  margin: 20 auto;
+  border: #003566;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: bold;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+.btn:hover {
+  background-color: #003566;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: #FFC300;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: bold;
+  justify-content: space-around;
+
+
+
+}
+
+/* syles of main page */
+.logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.image {
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 200px;
+}
+
+.getleft {
+  float: left;
+}
+
+div.container {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 45px 16px;
+  text-align: right;
+  border-radius: 20px 20px 0 0;
+}
+
+div.container a {
+  color: #FFF;
+  text-decoration: none;
+  font: 20px sans-serif;
+  margin: 0px 10px;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.topBotomBordersIn a:before,
+div.topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before,
+div.topBotomBordersIn a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.colornav {
+  background: #001D3D;
+}
+
+hr {
+  border-width: 2px;
+}
+
+.flex-container {
+  border-radius: 0 0 0 0;
+  display: flex;
+  background-color: #000814;
+}
+
+.flex-container2 {
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  background-color: #000814;
+}
+
+.flex-container3 {
+  border-radius: 0 0 0 0;
+  display: flex;
+  background-color: #000814;
+}
+
+.flex-container>div {
+  background-color: #FFC300;
+  margin: 25px;
+  padding: 20px;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.flex-container2>div {
+  background-color: #000814;
+  color: #FFC300;
+  margin: 25px;
+  padding: 20px;
+  flex: 1;
+  font-family: Segoe UI;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.flex-container3>div {
+  background-color: #000814;
+  padding: 0px;
+  flex: 1;
+  margin-bottom: 2px;
+}
+
+.footer-hr {
+  flex: 1;
+  background-color: #FFC300;
+  margin: 0 0;
+}
+
+.sm-button {
+  height: 70px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.fa:hover {
+  background-color: #003566;
+}
+
+.fa-facebook {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-twitter {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-youtube {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-instagram {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-icon-link {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-1>table {
+  border-collapse: collapse;
+}
+
+td {
+  padding-right: 30px;
+}
+
+.onespace {
+  text-indent: 15px;
+}
+
+.footerlogo {
+  /*font-family: ;*/
+  text-indent: 10px;
+}
+
+.flex-container>div.ft-3 {
+  flex: 1;
+}
+
+.flex-container>div.ft-2 {
+  flex: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-container>div.ft-1 {
+  flex: 1;
+}
+
+.linkspace {
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  color: #000814;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 3;
+}
+
+.tablefont {
+  font-size: 15px;
+  font-family: 'roboto', Times, serif;
+  font-weight: bold;
+}
+
+.linkspace:hover {
+  color: #003566;
+}

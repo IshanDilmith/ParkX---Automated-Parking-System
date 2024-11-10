@@ -1,0 +1,163 @@
+main {
+    background-image: url(../images/retievevehicle.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+form>input[type=text], textarea[type=text]{
+    width: 85%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #000814;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+form>input[type=time]{
+    width: 85%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #000814;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+  
+form{
+    padding: 25px 20px 20px 20px;
+    width: 40%;
+    border: 5px solid #000814;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    background-color: #ffffff92;
+}
+  
+form>input[type=submit] {
+    background-color: #001D3D;
+    color: #FFF;
+    padding: 14px 20px;
+    margin-left: 65%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Manrope',sans-serif;
+    font-size: 20px;
+}
+  
+form>input[type=submit]:hover {
+    background-color: #003566;
+}
+  
+form>label{
+    padding: 12px 20px;
+    color: #000814;;
+    font-family: 'Manrope',sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+  
+legend{
+    color: black;
+    font-family: 'Manrope',sans-serif;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+  
+.left-pad{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    padding-top: 10px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.time {
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0px;
+}
+
+.timeanddate{
+    text-align: center;
+    width: 40%;
+    border: none;
+    border-radius: 15px;
+    padding-left: 0;
+    color: #FFC300;
+    background-color: #000814de;
+}
+
+.showbutton{
+    border-radius: 15px;
+    color: #FFF;
+    background-color: #003566;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+}
+
+.hidebutton{
+    border-radius: 15px;
+    background-color: #ffffff8c;
+    text-align: center;
+    font-size: 20px;
+    width: 65px;
+    height: 65px;
+}
+
+.showbutton:hover{
+    background-color: #ffffff;
+    color: #000814;
+}
+  
+.hidebutton:hover{
+    background-color: #001d3d25;
+}
+
+.container-datetime{
+    display: flex;
+    float: right;
+	align-items: center;
+	justify-content: center;
+}
+
+.dis_info{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.userDis{
+    padding: 25px 20px 20px 20px;
+    width: 55%;
+    border: 5px solid #000814;
+    border-radius: 15px;
+    background-color: #003566dc;
+    font-family: 'Manrope',sans-serif;
+    word-spacing: 5px;
+}

@@ -1,0 +1,387 @@
+
+body {
+    background-image: url('../images/blackgound_img1.jpeg');
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    
+    
+    
+  }
+
+  .emptycontainer{ /* css for empty area*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 20vh; 
+  }
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 48px;
+}
+h2{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/*css for contact us forms*/
+.button-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+  }
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    width: 105%;
+    padding: 20px;
+    margin-left: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(76, 76, 76, 0.722);
+    
+}
+  
+  textarea {
+    height: 200px; 
+  }
+  
+  button {
+    background-color: #FFC300;
+    color: #000000;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    width: 100%;
+    justify-content: space-around;
+    
+  }
+  button:hover {
+    background-color: #003566;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    width: 102%;
+    justify-content: space-around;
+    margin-left: 5px;
+    box-shadow: 0 0 20px rgba(76, 76, 76, 0.722);
+
+    
+  }
+  
+
+  /* syles of main page */
+
+
+
+.logo{
+	display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.image {
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 200px;
+  }
+
+.getleft{
+  float: left;
+}
+
+div.container
+{
+  font-family: sans-serif;
+  margin: 0 auto;
+	padding: 45px 16px;
+	text-align: right;
+  border-radius: 20px 20px 0 0;
+}
+
+div.container a
+{
+  color: #FFF;
+  text-decoration: none;
+  font: 20px sans-serif;
+  margin: 0px 10px;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.colornav
+{
+  background: #001D3D;
+}
+
+hr{
+  border-width: 2px;
+}
+
+.flex-container {
+  border-radius: 0 0 0 0;
+  display: flex;
+  background-color: #000814;
+  
+}
+
+.flex-container2 {
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  background-color: #000814;
+}
+
+.flex-container3 {
+  border-radius: 0 0 0 0;
+  display: flex;
+  background-color: #000814;
+ }
+
+.flex-container > div{
+  background-color: #FFC300;
+  margin: 25px;
+  padding: 20px;
+  flex:1;
+  border-radius: 20px;
+}
+
+.flex-container2 > div{
+  background-color: #000814;
+  color:#FFC300;
+  margin: 25px;
+  padding: 20px;
+  flex:1;
+  font-family: Segoe UI;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.flex-container3 > div{
+  background-color: #000814;
+  padding: 0px;
+  flex:1;
+  margin-bottom: 2px;
+}
+
+.footer-hr{
+  flex:1;
+  background-color: #FFC300;
+  margin: 0 0;
+}
+
+.sm-button{
+  height: 70px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.fa:hover{
+  background-color: #003566;
+}
+  
+.fa-facebook {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+  
+.fa-twitter {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-youtube {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+  
+.fa-instagram {
+  background-color: #000814;
+  padding: 10px 13px;
+}
+
+.fa-icon-link {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-1>table{
+  border-collapse: collapse;
+}
+
+td{
+  padding-right: 30px;
+}
+
+.onespace{
+  text-indent: 15px;
+}
+
+.footerlogo{
+  /*font-family: ;*/
+  text-indent: 10px;
+}
+
+.flex-container>div.ft-3{
+  flex: 1;
+}
+
+.flex-container>div.ft-2{
+  flex: 2;
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex-container>div.ft-1{
+  flex: 1;
+}
+
+.linkspace{
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  color: #000814;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 3;
+}
+
+.tablefont{
+  font-size: 15px;
+  font-family: 'roboto', Times, serif;
+  font-weight: bold;
+}
+
+.linkspace:hover{
+  color: #003566;
+}

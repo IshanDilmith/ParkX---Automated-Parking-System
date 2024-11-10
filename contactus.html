@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/contactusstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>ParkX.com</title>
+</head>
+
+<body>
+<div class="getleft">    <!--logo-->
+    <div class="image">
+        <img src="images\ParkXlogo.png" alt="ParkX logo" class="logo">
+    </div>
+</div>
+<div class="container colornav topBotomBordersIn">    <!--navigation bar start-->
+    <a href="index.html">Home</a>
+    <a href="reservespotpage.php">Reserve a Parking Spot</a>
+    <a href="retrive.php">Retrieve Vehicle</a>
+    <a href="addFeedback.php">Feedback</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contactus.html">Contact Us</a>
+</div>    
+
+<!--buttons for send a new message and update new messages-->
+
+<div class="button-container">
+	<h2>Need Help?</h2>
+    <div class="tooltip">
+        <button id="newMessageButton" onclick="showNewMessageForm()">Send Message</button>
+        <span class="tooltiptext">Send a new message</span>
+    </div>
+    <div class="tooltip">
+        <button id="editMessageButton" onclick="showEditMessageForm()">Update Message</button>
+        <span class="tooltiptext">View edit or delete existing messaage</span>
+    </div>
+</div>
+
+<!--form for sent new message-->
+
+<div class="contact-form" id="newMessageForm" style="display: none;">
+    <h2>Send Message</h2>
+    <form action="contactus.php" method="post">
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone_number" name="phone_number">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" name="submitdetails">Submit</button>
+            
+        </div>
+    </form>
+</div>
+
+<!--form to show when press on update buttton-->
+
+<div class="contact-form" id="editMessageForm" style="display: none;">
+    <h2>Edit Message</h2>
+    <form action="editmessage.php" method="post">
+        <div class="form-group">
+            <label for="edited_message">Enter Your Message ID</label>
+            <input type="text" id="editedmessage" name="editedmessage" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Next</button>
+        </div>
+    </form>
+</div>
+<!--js for show or hide fomrs accoding to cliked button-->
+<script>
+    function showNewMessageForm() {
+        document.getElementById("newMessageForm").style.display = "block";
+        document.getElementById("editMessageForm").style.display = "none";
+        document.getElementById("emptycontainer").style.display = "none"; //hiding empty space
+    }
+
+    function showEditMessageForm() {
+        document.getElementById("editMessageForm").style.display = "block";
+        document.getElementById("newMessageForm").style.display = "none";
+        document.getElementById("emptycontainer").style.display = "none"; // hiding empty space
+    }
+</script>
+<div class=" emptycontainer" id="emptycontainer" style="display: block;"></div> <!--adding empty space for avoid footer going up in small pages-->
+<footer>
+    <div class="flex-container">    <!--container1-->
+        <div class="ft-1">    <!--box1-->
+            <table class="tablefont">
+                <tr>
+                    <td>
+                        <p style="font-size: 17px;">Our Address:</p>
+                        <p class="onespace"> 25A/3, 5th street,</p>
+                        <p class="onespace"> R A De Mel Mawatha,</p>
+                        <p class="onespace"> Colombo.</p>
+                    </td>
+                    <td>
+                        <p style="font-size: 17px;">Email Us:</p>
+                        <p class="onespace"> ParkX@gmail.com</p>
+                        <p class="onespace"> ParkXmail@gmail.com</p>
+                        <p class="onespace"> ParkX.com</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="ft-2">	<!--box2-->
+					<center>
+							<a href="index.html" class="linkspace">Home</a>
+							<a href="reservespotpage.php" class="linkspace">Reserve a Parking Spot</a>
+							<a href="retrive.php" class="linkspace">Retrieve Vehicle</a>
+							<a href="addFeedback.php" class="linkspace">Feedback</a>
+							<a href="aboutus.html" class="linkspace">About Us</a>
+							<a href="contactus.html" class="linkspace">Contact Us</a>
+					</center>
+				</div>
+				<div class="ft-3">	<!--box3-->
+					<div class="sm-button">
+						<a href="https://www.facebook.com" class="fa-icon-link"><i class="fa fa-facebook" style="font-size: 30px;"></i></a>
+						<a href="https://www.twitter.com" class="fa-icon-link"><i class="fa fa-twitter" style="font-size: 30px;"></i></a>
+						<a href="https://www.youtube.com" class="fa-icon-link"><i class="fa fa-youtube" style="font-size: 30px;"></i></a>
+						<a href="https://www.instagram.com" class="fa-icon-link"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+					</div>
+				</div>
+    </div>
+    <div class="flex-container3">    <!--container3-->
+        <div><hr class="footer-hr"></div>
+    </div>
+    <div class="flex-container2">    <!--container2-->
+        <div><center>ParkX &copy 2023 All rights reserved.</center></div>
+    </div>
+</footer>
+<!--footer section end-->
+</body>
+</html>
